@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+
+// // Navigation bar Styling
+#nav-bar {
+    background-color: rgba(0, 0, 0, 0.298); /* Adjust the opacity for the glassmorphic effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(10px); /* Apply a blur effect to create the glassmorphic effect */
+    padding: 10px 20px;
+    z-index: 100; /* Ensure the navbar appears above other content */
+
+}
