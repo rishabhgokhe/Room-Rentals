@@ -18,6 +18,14 @@ function NavbarComponent({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
+        <MenuItem setActive={setActive} active={active} item="Discover">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/web-dev">Near you</HoveredLink>
+            <HoveredLink href="/interface-design">Partnership Rentals</HoveredLink>
+            <HoveredLink href="/seo">Rentals Chains</HoveredLink>
+            <HoveredLink href="/branding">Luxury Apartments</HoveredLink>
+          </div>
+        </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
