@@ -47,7 +47,7 @@ export function WobbleCardComponent() {
           </p>
         </div>
         <Image
-          src="/linear.webp"
+          src="/noise.webp"
           width={500}
           height={500}
           alt="linear demo image"

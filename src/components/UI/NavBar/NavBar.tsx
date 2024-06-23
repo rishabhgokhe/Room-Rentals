@@ -18,6 +18,7 @@ function NavbarComponent({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
+        <a href="/">Home</a>
         <MenuItem setActive={setActive} active={active} item="Discover">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Near you</HoveredLink>
@@ -28,10 +29,10 @@ function NavbarComponent({ className }: { className?: string }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/web-dev">Rooms</HoveredLink>
+            <HoveredLink href="/interface-design">Apartments</HoveredLink>
+            <HoveredLink href="/seo">Hostel</HoveredLink>
+            <HoveredLink href="/branding">Resorts and Hotels</HoveredLink>
           </div>
         </MenuItem>
         {/* <MenuItem setActive={setActive} active={active} item="Products">
@@ -62,12 +63,13 @@ function NavbarComponent({ className }: { className?: string }) {
             />
           </div>
         </MenuItem> */}
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+
+        <MenuItem setActive={setActive} active={active} item="Contact Us">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby">Customer Support</HoveredLink>
+            <HoveredLink href="/individual">Generate Ticket</HoveredLink>
+            <HoveredLink href="/team">Chat</HoveredLink>
+            <HoveredLink href="/enterprise">Email your Query</HoveredLink>
           </div>
         </MenuItem>
       </Menu>

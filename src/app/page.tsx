@@ -10,8 +10,8 @@ export default function Home() {
   <Lamp />
   <BentoGridComponent />
   {/* <ParallaxScrollComponent /> */}
-  <WobbleCardComponent />
   <GridBackground />
+  <WobbleCardComponent />
   
   {/* <NextTemplate /> */}
   </>;
